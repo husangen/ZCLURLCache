@@ -25,7 +25,7 @@
 
 - (void)downloadUrl:(NSString *)url completed:(void (^)(NSData *, NSError *))completed
 {
-    NSLog(@"start download %@.", url);
+    //NSLog(@"start download %@.", url);
     
     NSURL* surl = [NSURL URLWithString:url];
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:surl];
@@ -37,7 +37,7 @@
         {
             completed(data, connectionError);
             
-            NSLog(@"Download %@ completed.", url);
+            //NSLog(@"Download %@ completed.", url);
         }
     }];
 }

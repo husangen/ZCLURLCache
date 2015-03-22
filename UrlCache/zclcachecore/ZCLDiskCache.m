@@ -61,11 +61,11 @@
     }
     if (![fileManager createFileAtPath:path contents:data attributes:nil])
     {
-        NSLog(@"save data with %@ error.", url);
+        //NSLog(@"save data with %@ error.", url);
     }
     else
     {
-        NSLog(@"save data with %@ success.", url);
+        //NSLog(@"save data with %@ success.", url);
     }
 }
 
@@ -82,7 +82,7 @@
     }
     else
     {
-        NSLog(@"Clear disk cache error");
+        //NSLog(@"Clear disk cache error");
     }
 }
 

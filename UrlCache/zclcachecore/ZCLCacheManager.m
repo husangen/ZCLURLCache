@@ -57,7 +57,7 @@
         data = [self.memoryCache dataWithUrl:url];
         completed(data);
         
-        NSLog(@"get data from memory.");
+        //NSLog(@"get data from memory.");
     }
     else if ([self.diskCache urlInDiskCache:url])
     {
@@ -65,7 +65,7 @@
         [self.memoryCache addData:data withUrl:url];
         completed(data);
         
-        NSLog(@"get data from disk.");
+        //NSLog(@"get data from disk.");
     }
     else
     {
